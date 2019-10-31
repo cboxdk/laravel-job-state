@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Cbox\\LaravelJobState\\LaravelJobStateServiceProvider"
+                "Cboxdk\\LaravelJobState\\Providers\\LaravelJobStateServiceProvider"
             ]
         }
     }

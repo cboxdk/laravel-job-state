@@ -1,6 +1,6 @@
 <?php
 
-namespace Cbox\LaravelJobStatus\Providers;
+namespace Cboxdk\LaravelJobState\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
