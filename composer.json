@@ -1,0 +1,22 @@
+{
+    "name": "cboxdk/laravel-job-state",
+    "description": "A Laravel Job State Package. Track status, progress and in/output. Add the ability to stop long running jobs during execution.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvester Nielsen",
+            "email": "sn@cbox.dk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cbox\\LaravelJobState\\": "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.3"
+    }
+}
