@@ -13,13 +13,13 @@ class LaravelJobStateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadMigrationsFrom(__DIR__ . '/migrations');
-        $this->mergeConfigFrom(__DIR__ . '/../config/job-status.php', 'job-status');
+        $this->loadMigrationsFrom(__DIR__ . '/../../migrations');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/job-state.php', 'job-state');
         $this->publishes([
-            __DIR__ . '../database/migrations/' => database_path('migrations'),
+            __DIR__ . '../../migrations/' => database_path('migrations'),
         ], 'migrations');
         $this->publishes([
-            __DIR__ . '/../config/' => config_path(),
+            __DIR__ . '/../../config/' => config_path(),
         ], 'config');
         //dd('ee');
         //$this->bootListeners();
