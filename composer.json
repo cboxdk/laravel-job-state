@@ -18,5 +18,12 @@
     },
     "require-dev": {
         "orchestra/testbench": "^4.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cbox\\LaravelJobState\\LaravelJobStateServiceProvider"
+            ]
+        }
     }
 }

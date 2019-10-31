@@ -21,6 +21,7 @@ class LaravelJobStateServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/' => config_path(),
         ], 'config');
+        dd('ee');
         //$this->bootListeners();
     }
 
