@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Cbox\\LaravelJobState\\": "src"
+            "Cboxdk\\LaravelJobState\\": "src"
         }
     },
     "require": {

@@ -21,14 +21,14 @@ class LaravelJobStateServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/' => config_path(),
         ], 'config');
-        dd('ee');
+        //dd('ee');
         //$this->bootListeners();
     }
 
     private function bootListeners()
     {
         /** @var EventManager $eventManager */
-        $eventManager = app(config('job-status.event_manager'));
+        $eventManager = app(config('job-state.event_manager'));
         // Add Event listeners
         app(QueueManager::class)->before(function (JobProcessing $event) use ($eventManager) {
             $eventManager->before($event);
